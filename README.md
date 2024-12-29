@@ -1,2 +1,2 @@
 # felias-fogg.github.io
-Distribution for a few tool files
+Distribution URL for a few Arduino tool files.
