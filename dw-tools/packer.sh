@@ -2,8 +2,8 @@
 #script for packing the dw-link tools: avr-gdb + dw-gdbserver + dw-gsbserver-util
 #usage: call the script in this directory; version will be deduced from dw-gdbserver -V
 
-if [ -f ../collections/x86_64-apple-darwin/dw-gdbserver ]; then
-    VERSION=`../collections/x86_64-apple-darwin/dw-gdbserver -V`
+if [ -f ../../dw-gdbserver/binaries/x86_64-apple-darwin/dw-gdbserver ]; then
+    VERSION=`../../dw-gdbserver/binaries/x86_64-apple-darwin/dw-gdbserver -V`
     VERNUM=`echo $VERSION | cut -d' ' -f 3`
     VERSTR=dw-tools-$VERNUM
     echo "Creating tool packages for version $VERSTR"
@@ -12,7 +12,7 @@ else
     exit
 fi
 
-for dir in ../collections/*; do
+for dir in ../../dw-gdbserver/binaries/*; do
     if [ -d $dir ]; then
 	if  [ -f $dir/avr-gdb -o -f $dir/avr-gdb.exe ]; then
 	    if [ -f $dir/dw-gdbserver -o -f $dir/dw-gdbserver.exe ]; then
