@@ -22,7 +22,10 @@ for dir in ../binaries/*; do
 		    rm -rf tools
 		    mkdir tools
 		    cp -r $dir/* tools/
-		    tar -jcv --exclude="*DS_Store" --exclude="*/._*" -f ${VERSTR}_${type}.tar.bz2 tools/ 
+		    tar -jcv --exclude="*DS_Store" --exclude="*/._*" -f ${VERSTR}_${type}.tar.bz2 tools/
+		    cd tools
+		    tar -zcv --exclude="*DS_Store" --exclude="*/._*" --exclude="avr-gdb*" -f ../../assets/dw-gdbserver-${type}-${VERNUM}.tar.gz .
+		    cd ..
 		    rm -rf tools
 		fi
 	    fi
