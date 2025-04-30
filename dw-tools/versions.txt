@@ -40,24 +40,24 @@ avr-gdb: 7.8
              --with-zlib
              --without-babeltrace
 
-x86_64-apple-darwin:
-dw-server: created under macOS 15.3.1 / Python 3.13.2 / Pyserial 3.5
-avr-gdb: 7.8
-   configure --host=x86_64-apple-darwin17.0.0 --target=avr
+x86_64-apple-darwin / arm64-apple-darwin:
+dw-server: created under macOS 15.4 / Python 3.13.2 / Pyserial 3.5
+avr-gdb: 7.8 (fat binary)
+   configure --host=arm-apple-darwin21.0.0 --target=avr
              --with-auto-load-dir=:${prefix}/share/auto-load
              --with-auto-load-safe-path=:${prefix}/share/auto-load
              --with-expat
-             --with-gdb-datadir=/Volumes/build_disk/jenkins_mcu/workspace/avr8-gnu-toolchain-osx/avr8-gnu-toolchain-darwin_x86_64/share/gdb (relocatable)
-             --with-jit-reader-dir=/Volumes/build_disk/jenkins_mcu/workspace/avr8-gnu-toolchain-osx/avr8-gnu-toolchain-darwin_x86_64/lib/gdb (relocatable)
+             --with-gdb-datadir=/opt/developer/svcjenkins/agent/workspace/XC8_AVR_xc8-avr-tc_xc8/avr8-gnu-toolchain-darwin_universal/share/gdb (relocatable)
+             --with-jit-reader-dir=/opt/developer/svcjenkins/agent/workspace/XC8_AVR_xc8-avr-tc_xc8/avr8-gnu-toolchain-darwin_universal/lib/gdb (relocatable)
              --without-libunwind-ia64
-             --with-lzma
+             --without-lzma
              --without-guile
-             --with-separate-debug-dir=/Volumes/build_disk/jenkins_mcu/workspace/avr8-gnu-toolchain-osx/avr8-gnu-toolchain-darwin_x86_64/lib/debug (relocatable)
+             --with-separate-debug-dir=/opt/developer/svcjenkins/agent/workspace/XC8_AVR_xc8-avr-tc_xc8/avr8-gnu-toolchain-darwin_universal/lib/debug (relocatable)
              --with-zlib
              --without-babeltrace
 
-i686-mingw32:
-dw-server: created under Windows11 / Python 3.13.1 / Pyserial 3.5
+x86_64-mingw32:
+dw-server: created under Windows11 / Python 3.13.3 / Pyserial 3.5
 avr-gdb: 7.8
    configure --host=x86_64-w64-mingw32 --target=avr
              --with-auto-load-dir=$debugdir:$datadir/auto-load
