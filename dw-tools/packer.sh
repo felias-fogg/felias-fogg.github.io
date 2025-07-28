@@ -25,7 +25,7 @@ for dir in ../binaries/*; do
 		    tar -jcv --exclude="*DS_Store" --exclude="*/._*" -f ${VERSTR}_${type}.tar.bz2 tools/
 		    cd tools
 		    if [ ! -f readme.md ]; then 
-			tar -zcv --exclude="*DS_Store" --exclude="*/._*" --exclude="avr-gdb*" -f ../../assets/dw-gdbserver-${type}-${VERNUM}.tar.gz .
+			tar -zcv --exclude="*DS_Store" --exclude="*/._*" -f ../../assets/dw-gdbserver-${type}-${VERNUM}.tar.gz .
 		    fi
 		    cd ..
 		    rm -rf tools
