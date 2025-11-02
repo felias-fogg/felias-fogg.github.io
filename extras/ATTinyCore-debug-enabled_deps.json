@@ -1,0 +1,15 @@
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "ATTinyCore-debug-enabled",
+              "name": "avrdude",
+              "version": "8.0-arduino.1"
+            },
+            {
+              "packager": "ATTinyCore-debug-enabled",
+              "name": "micronucleus",
+              "version": "2.5-azd1b"
+            },

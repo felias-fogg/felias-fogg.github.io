@@ -1,0 +1,952 @@
+{
+  "packages": [
+    {
+      "name": "ATTinyCore",
+      "maintainer": "Bernhard Nebel",
+      "websiteURL": "https://github.com/felias-fogg/ATTinyCore",
+      "email": "nebel@hinterm-ziel.de",
+      "help": {
+        "online": "https://github.com/felias-fogg/ATTinyCore"
+      },
+      "platforms": [
+        {
+          "name": "ATTinyCore (Debug enabled)",
+          "architecture": "avr",
+          "version": "1.7.0",
+          "category": "Contributed",
+          "url": "https://felias-fogg.github.io/ATTinyCore/ATTinyCore-1.7.0.tar.bz2",
+          "archiveFileName": "ATTinyCore-1.7.0.tar.bz2",
+          "checksum": "SHA-256:bd5c269fa4c96b0beb11b24f25e89b4b41790a806e278d046235af69a34cd0e4",
+          "size": "7876923",
+          "boards": [
+            {
+              "name": "<b>Program via ISP or Serial:</b> ATtiny841/441, ATtiny85/45/25, ATtiny84/44/24, ATtiny1634, ATtiny861/461/261, ATtiny167/87, ATtiny43, ATtiny828, ATtiny88/48, ATtiny4313/2313"
+            },
+            {
+              "name": "<br/><b>USB (Micronucleus) Support:</b> DigiSpark (t85), Digispark Pro (t167), MH-ET (t88), Wattuino/Nanite/etc (t841), CaliforniaSTEAM (t84)"
+            },
+            {
+              "name": "<br/><b>Windows users:</b> If USB drivers are not already installed, run the post_install.bat manually or DL from <a href=https://azduino.com/bin/micronucleus>https://azduino.com/bin/micronucleus</a>"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino18"
+            },
+            {
+              "packager": "felias-fogg",
+              "name": "micronucleus",
+              "version": "2.5-azd1b"
+            },
+            {
+              "packager": "felias-fogg",
+              "name": "dw-tools",
+              "version": "2.1.8"
+            }
+          ]
+        },
+        {
+          "name": "ATTinyCore (Debug enabled)",
+          "architecture": "avr",
+          "version": "1.7.1",
+          "category": "Contributed",
+          "url": "https://felias-fogg.github.io/ATTinyCore/ATTinyCore-1.7.1.tar.bz2",
+          "archiveFileName": "ATTinyCore-1.7.1.tar.bz2",
+          "checksum": "SHA-256:c0336eb6da7894572717eb605ce341034be14f3b24f3d4e13a298c09f615972d",
+          "size": "7877887",
+          "boards": [
+            {
+              "name": "<b>Program via ISP or Serial:</b> ATtiny841/441, ATtiny85/45/25, ATtiny84/44/24, ATtiny1634, ATtiny861/461/261, ATtiny167/87, ATtiny43, ATtiny828, ATtiny88/48, ATtiny4313/2313"
+            },
+            {
+              "name": "<br/><b>USB (Micronucleus) Support:</b> DigiSpark (t85), Digispark Pro (t167), MH-ET (t88), Wattuino/Nanite/etc (t841), CaliforniaSTEAM (t84)"
+            },
+            {
+              "name": "<br/><b>Windows users:</b> If USB drivers are not already installed, run the post_install.bat manually or DL from <a href=https://azduino.com/bin/micronucleus>https://azduino.com/bin/micronucleus</a>"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino18"
+            },
+            {
+              "packager": "ATTinyCore",
+              "name": "micronucleus",
+              "version": "2.5-azd1b"
+            },
+            {
+              "packager": "ATTinyCore",
+              "name": "dw-tools",
+              "version": "2.2.0"
+            }
+          ]
+        },
+        {
+          "name": "ATTinyCore (Debug enabled)",
+          "architecture": "avr",
+          "version": "1.7.2",
+          "category": "Contributed",
+          "url": "https://felias-fogg.github.io/ATTinyCore/ATTinyCore-1.7.2.tar.bz2",
+          "archiveFileName": "ATTinyCore-1.7.2.tar.bz2",
+          "checksum": "SHA-256:3922fbfc248364801a1f4924544e80d73deeb28f41c65563ef3d8d59045056dd",
+          "size": "7877099",
+          "boards": [
+            {
+              "name": "<b>Program via ISP or Serial:</b> ATtiny841/441, ATtiny85/45/25, ATtiny84/44/24, ATtiny1634, ATtiny861/461/261, ATtiny167/87, ATtiny43, ATtiny828, ATtiny88/48, ATtiny4313/2313"
+            },
+            {
+              "name": "<br/><b>USB (Micronucleus) Support:</b> DigiSpark (t85), Digispark Pro (t167), MH-ET (t88), Wattuino/Nanite/etc (t841), CaliforniaSTEAM (t84)"
+            },
+            {
+              "name": "<br/><b>Windows users:</b> If USB drivers are not already installed, run the post_install.bat manually or DL from <a href=https://azduino.com/bin/micronucleus>https://azduino.com/bin/micronucleus</a>"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino18"
+            },
+            {
+              "packager": "ATTinyCore",
+              "name": "micronucleus",
+              "version": "2.5-azd1b"
+            },
+            {
+              "packager": "ATTinyCore",
+              "name": "dw-tools",
+              "version": "2.2.1"
+            }
+          ]
+        },
+        {
+          "name": "ATTinyCore (Debug enabled)",
+          "architecture": "avr",
+          "version": "1.7.4",
+          "category": "Contributed",
+          "url": "https://felias-fogg.github.io/ATTinyCore/ATTinyCore-1.7.4.tar.bz2",
+          "archiveFileName": "ATTinyCore-1.7.4.tar.bz2",
+          "checksum": "SHA-256:aa5e56a271a1f6059c11e76b4bb276309f99a642fb3c0959ce90fd605af70a53",
+          "size": "7871693",
+          "boards": [
+            {
+              "name": "<b>Program via ISP or Serial:</b> ATtiny841/441, ATtiny85/45/25, ATtiny84/44/24, ATtiny1634, ATtiny861/461/261, ATtiny167/87, ATtiny43, ATtiny828, ATtiny88/48, ATtiny4313/2313"
+            },
+            {
+              "name": "<br/><b>USB (Micronucleus) Support:</b> DigiSpark (t85), Digispark Pro (t167), MH-ET (t88), Wattuino/Nanite/etc (t841), CaliforniaSTEAM (t84)"
+            },
+            {
+              "name": "<br/><b>Windows users:</b> If USB drivers are not already installed, run the post_install.bat manually or DL from <a href=https://azduino.com/bin/micronucleus>https://azduino.com/bin/micronucleus</a>"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "ATTinyCore",
+              "name": "avrdude",
+              "version": "8.0-arduino.1"
+            },
+            {
+              "packager": "ATTinyCore",
+              "name": "micronucleus",
+              "version": "2.5-azd1b"
+            },
+            {
+              "packager": "ATTinyCore",
+              "name": "dw-tools",
+              "version": "2.2.1"
+            }
+          ]
+        },
+        {
+          "name": "ATTinyCore (Debug enabled)",
+          "architecture": "avr",
+          "version": "1.8.0",
+          "category": "Contributed",
+          "url": "https://felias-fogg.github.io/ATTinyCore/ATTinyCore-1.8.0.tar.bz2",
+          "archiveFileName": "ATTinyCore-1.8.0.tar.bz2",
+          "checksum": "SHA-256:c874fdf68edb877c654b22227c6980ce455eba4a38992b13037d7f549980c2f2",
+          "size": "7905984",
+          "boards": [
+            {
+              "name": "<b>Program via ISP or Serial:</b> ATtiny841/441, ATtiny85/45/25, ATtiny84/44/24, ATtiny1634, ATtiny861/461/261, ATtiny167/87, ATtiny43, ATtiny828, ATtiny88/48, ATtiny4313/2313"
+            },
+            {
+              "name": "<br/><b>USB (Micronucleus) Support:</b> DigiSpark (t85), Digispark Pro (t167), MH-ET (t88), Wattuino/Nanite/etc (t841), CaliforniaSTEAM (t84)"
+            },
+            {
+              "name": "<br/><b>Windows users:</b> If USB drivers are not already installed, run the post_install.bat manually or DL from <a href=https://azduino.com/bin/micronucleus>https://azduino.com/bin/micronucleus</a>"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "ATTinyCore",
+              "name": "avrdude",
+              "version": "8.0-arduino.1"
+            },
+            {
+              "packager": "ATTinyCore",
+              "name": "micronucleus",
+              "version": "2.5-azd1b"
+            },
+            {
+              "packager": "ATTinyCore",
+              "name": "dw-tools",
+              "version": "2.3.2"
+            }
+          ]
+        },
+        {
+          "name": "ATTinyCore (Debug enabled)",
+          "architecture": "avr",
+          "version": "1.8.1",
+          "category": "Contributed",
+          "url": "https://felias-fogg.github.io/ATTinyCore/ATTinyCore-1.8.1.tar.bz2",
+          "archiveFileName": "ATTinyCore-1.8.1.tar.bz2",
+          "checksum": "SHA-256:17b72e27f0b20652d7e847c96b0e74f6b0a5db226e6e48db48bdea334159e786",
+          "size": "7906075",
+          "boards": [
+            {
+              "name": "<b>Program via ISP or Serial:</b> ATtiny841/441, ATtiny85/45/25, ATtiny84/44/24, ATtiny1634, ATtiny861/461/261, ATtiny167/87, ATtiny43, ATtiny828, ATtiny88/48, ATtiny4313/2313"
+            },
+            {
+              "name": "<br/><b>USB (Micronucleus) Support:</b> DigiSpark (t85), Digispark Pro (t167), MH-ET (t88), Wattuino/Nanite/etc (t841), CaliforniaSTEAM (t84)"
+            },
+            {
+              "name": "<br/><b>Windows users:</b> If USB drivers are not already installed, run the post_install.bat manually or DL from <a href=https://azduino.com/bin/micronucleus>https://azduino.com/bin/micronucleus</a>"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "ATTinyCore",
+              "name": "avrdude",
+              "version": "8.0-arduino.1"
+            },
+            {
+              "packager": "ATTinyCore",
+              "name": "micronucleus",
+              "version": "2.5-azd1b"
+            },
+            {
+              "packager": "ATTinyCore",
+              "name": "dw-tools",
+              "version": "2.3.2"
+            }
+          ]
+        },
+        {
+          "name": "ATTinyCore (Debug enabled)",
+          "architecture": "avr",
+          "version": "1.9.0",
+          "category": "Contributed",
+          "url": "https://felias-fogg.github.io/ATTinyCore/ATTinyCore-1.9.0.tar.bz2",
+          "archiveFileName": "ATTinyCore-1.9.0.tar.bz2",
+          "checksum": "SHA-256:6c8ff9354293736b5f197094e2e8f0a7707984929c6ab61df4bbf00475b7dc58",
+          "size": "7906019",
+          "boards": [
+            {
+              "name": "<b>Program via ISP or Serial:</b> ATtiny841/441, ATtiny85/45/25, ATtiny84/44/24, ATtiny1634, ATtiny861/461/261, ATtiny167/87, ATtiny43, ATtiny828, ATtiny88/48, ATtiny4313/2313"
+            },
+            {
+              "name": "<br/><b>USB (Micronucleus) Support:</b> DigiSpark (t85), Digispark Pro (t167), MH-ET (t88), Wattuino/Nanite/etc (t841), CaliforniaSTEAM (t84)"
+            },
+            {
+              "name": "<br/><b>Windows users:</b> If USB drivers are not already installed, run the post_install.bat manually or DL from <a href=https://azduino.com/bin/micronucleus>https://azduino.com/bin/micronucleus</a>"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "ATTinyCore",
+              "name": "avrdude",
+              "version": "8.0-arduino.1"
+            },
+            {
+              "packager": "ATTinyCore",
+              "name": "micronucleus",
+              "version": "2.5-azd1b"
+            },
+            {
+              "packager": "ATTinyCore",
+              "name": "dw-tools",
+              "version": "2.3.2"
+            }
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "name": "micronucleus",
+          "version": "2.5-azd1b",
+          "systems": [
+            {
+              "size": "1166778",
+              "checksum": "SHA-256:db8f92750d1c94669ba5d8b46e72d27d28ec927a19344cf42b7ae7bd1b5c30c9",
+              "host": "x86_64-mingw32",
+              "archiveFileName": "micronucleus-cli-2.5-azd1b-x86_64-mingw32.zip",
+              "url": "https://azduino.com/bin/micronucleus/micronucleus-cli-2.5-azd1b-x86_64-mingw32.zip"
+            },
+            {
+              "size": "1159717",
+              "checksum": "SHA-256:5e795fb90598ea7a0e917965fc9bc6d536c405df50d2735f12b2fb8710bcec54",
+              "host": "i686-mingw32",
+              "archiveFileName": "micronucleus-cli-2.5-azd1b-i686-mingw32.zip",
+              "url": "https://azduino.com/bin/micronucleus/micronucleus-cli-2.5-azd1b-i686-mingw32.zip"
+            },
+            {
+              "size": "325836",
+              "checksum": "SHA-256:c557d5769125f94b82ec2c30b1b68c9fb8a140e06b141aafb794907022f0bf56",
+              "host": "aarch64-linux-gnu",
+              "archiveFileName": "micronucleus-cli-2.5-azd1-aarch64-linux-gnu.tar.bz2",
+              "url": "https://azduino.com/bin/micronucleus/micronucleus-cli-2.5-azd1-aarch64-linux-gnu.tar.bz2"
+            },
+            {
+              "size": "276745",
+              "checksum": "SHA-256:cedf56ab3f2fdaa2ad2e55de26d73b41aa03c3ac9698ab3b719ef86d76487084",
+              "host": "arm-linux-gnueabihf",
+              "archiveFileName": "micronucleus-cli-2.5-azd1-arm-linux-gnueabihf.tar.bz2",
+              "url": "https://azduino.com/bin/micronucleus/micronucleus-cli-2.5-azd1-arm-linux-gnueabihf.tar.bz2"
+            },
+            {
+              "size": "372733",
+              "checksum": "SHA-256:daea74a05671b14f619763dc21168103c9837c56ba84aa88c329979a1eac8bd7",
+              "host": "i686-linux-gnu",
+              "archiveFileName": "micronucleus-cli-2.5-azd1-i686-linux-gnu.tar.bz2",
+              "url": "https://azduino.com/bin/micronucleus/micronucleus-cli-2.5-azd1-i686-linux-gnu.tar.bz2"
+            },
+            {
+              "size": "51607",
+              "checksum": "SHA-256:cf0d268409ba8a5121225aceb5d8a562915b85bc96c270db5fb776a983355d51",
+              "host": "x86_64-apple-darwin",
+              "archiveFileName": "micronucleus-cli-2.5-azd1-x86_64-apple-darwin.tar.bz2",
+              "url": "https://azduino.com/bin/micronucleus/micronucleus-cli-2.5-azd1-x86_64-apple-darwin.tar.bz2"
+            },
+            {
+              "size": "431381",
+              "checksum": "SHA-256:1a9efa50e23fec004bf169579978882db6079b76c52da9188d149d270ded432c",
+              "host": "x86_64-linux-gnu",
+              "archiveFileName": "micronucleus-cli-2.5-azd1-x86_64-linux-gnu.tar.bz2",
+              "url": "https://azduino.com/bin/micronucleus/micronucleus-cli-2.5-azd1-x86_64-linux-gnu.tar.bz2"
+            }
+          ]
+        },
+        {
+          "name": "micronucleus",
+          "version": "2.5-azd1",
+          "systems": [
+            {
+              "size": "1062391",
+              "checksum": "SHA-256:21b8a314b65b5143f1fcf865ec17a256d42894e6e95140b80146b60a779d4585",
+              "host": "x86_64-mingw32",
+              "archiveFileName": "micronucleus-cli-2.5-azd1-x86_64-mingw32.tar.bz2",
+              "url": "https://azduino.com/bin/micronucleus/micronucleus-cli-2.5-azd1-x86_64-mingw32.tar.bz2"
+            },
+            {
+              "size": "1039040",
+              "checksum": "SHA-256:69b7703c12dd0ead6547fd859bbf1a7450aa89d693fa93fc69f7e688cb69a9a6",
+              "host": "i686-mingw32",
+              "archiveFileName": "micronucleus-cli-2.5-azd1-i686-mingw32.tar.bz2",
+              "url": "https://azduino.com/bin/micronucleus/micronucleus-cli-2.5-azd1-i686-mingw32.tar.bz2"
+            },
+            {
+              "size": "325836",
+              "checksum": "SHA-256:c557d5769125f94b82ec2c30b1b68c9fb8a140e06b141aafb794907022f0bf56",
+              "host": "aarch64-linux-gnu",
+              "archiveFileName": "micronucleus-cli-2.5-azd1-aarch64-linux-gnu.tar.bz2",
+              "url": "https://azduino.com/bin/micronucleus/micronucleus-cli-2.5-azd1-aarch64-linux-gnu.tar.bz2"
+            },
+            {
+              "size": "276745",
+              "checksum": "SHA-256:cedf56ab3f2fdaa2ad2e55de26d73b41aa03c3ac9698ab3b719ef86d76487084",
+              "host": "arm-linux-gnueabihf",
+              "archiveFileName": "micronucleus-cli-2.5-azd1-arm-linux-gnueabihf.tar.bz2",
+              "url": "https://azduino.com/bin/micronucleus/micronucleus-cli-2.5-azd1-arm-linux-gnueabihf.tar.bz2"
+            },
+            {
+              "size": "372733",
+              "checksum": "SHA-256:daea74a05671b14f619763dc21168103c9837c56ba84aa88c329979a1eac8bd7",
+              "host": "i686-linux-gnu",
+              "archiveFileName": "micronucleus-cli-2.5-azd1-i686-linux-gnu.tar.bz2",
+              "url": "https://azduino.com/bin/micronucleus/micronucleus-cli-2.5-azd1-i686-linux-gnu.tar.bz2"
+            },
+            {
+              "size": "51607",
+              "checksum": "SHA-256:cf0d268409ba8a5121225aceb5d8a562915b85bc96c270db5fb776a983355d51",
+              "host": "x86_64-apple-darwin",
+              "archiveFileName": "micronucleus-cli-2.5-azd1-x86_64-apple-darwin.tar.bz2",
+              "url": "https://azduino.com/bin/micronucleus/micronucleus-cli-2.5-azd1-x86_64-apple-darwin.tar.bz2"
+            },
+            {
+              "size": "431381",
+              "checksum": "SHA-256:1a9efa50e23fec004bf169579978882db6079b76c52da9188d149d270ded432c",
+              "host": "x86_64-linux-gnu",
+              "archiveFileName": "micronucleus-cli-2.5-azd1-x86_64-linux-gnu.tar.bz2",
+              "url": "https://azduino.com/bin/micronucleus/micronucleus-cli-2.5-azd1-x86_64-linux-gnu.tar.bz2"
+            }
+          ]
+        },
+        {
+          "name": "dw-tools",
+          "version": "2.1.8",
+          "systems": [
+            {
+              "size": "13401574",
+              "checksum": "SHA-256:3c03a18d0ad8b85ab57fa8e1e106a283d9eafc81e466f2e85ca3db19adb90283",
+              "host": "aarch64-linux-gnu",
+              "archiveFileName": "dw-tools-2.1.8_aarch64-linux-gnu.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.1.8_aarch64-linux-gnu.tar.bz2"
+            },
+            {
+              "size": "17105442",
+              "checksum": "SHA-256:794752aff2de46cc18c976b780ebae01d16d0086e1034e2fd630df924640a4eb",
+              "host": "x86_64-apple-darwin",
+              "archiveFileName": "dw-tools-2.1.8_x86_64-apple-darwin.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.1.8_x86_64-apple-darwin.tar.bz2"
+            },
+            {
+              "size": "11753176",
+              "checksum": "SHA-256:33e58199c853aabbcda7e21b3a9f0a6a81072790962540c52c4e6023566686cd",
+              "host": "x86_64-linux-gnu",
+              "archiveFileName": "dw-tools-2.1.8_x86_64-linux-gnu.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.1.8_x86_64-linux-gnu.tar.bz2"
+            },
+            {
+              "size": "10178675",
+              "checksum": "SHA-256:9874c6958667e0cb961d88ade6caaf24436784e5a4a9ccfa15f5b218b0e8542b",
+              "host": "x86_64-mingw32",
+              "archiveFileName": "dw-tools-2.1.8_x86_64-mingw32.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.1.8_x86_64-mingw32.tar.bz2"
+            },
+            {
+              "size": "16700766",
+              "checksum": "SHA-256:d05609c31c70adf7ddde368202163e9d1e4f0be2d1f75b23dec62377de161da1",
+              "host": "arm64-apple-darwin",
+              "archiveFileName": "dw-tools-2.1.8_arm64-apple-darwin.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.1.8_arm64-apple-darwin.tar.bz2"
+            }
+          ]
+        },
+        {
+          "name": "dw-tools",
+          "version": "2.2.0",
+          "systems": [
+            {
+              "size": "13428567",
+              "checksum": "SHA-256:80364285b4ba923871f18914e838c34a49a20504cce7198bd0b89ca56dc52d19",
+              "host": "aarch64-linux-gnu",
+              "archiveFileName": "dw-tools-2.2.0_aarch64-linux-gnu.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.2.0_aarch64-linux-gnu.tar.bz2"
+            },
+            {
+              "size": "17103147",
+              "checksum": "SHA-256:e1553840a0928d9f775338fe5c436b570ea87546fa2370413c303d134a8598d3",
+              "host": "x86_64-apple-darwin",
+              "archiveFileName": "dw-tools-2.2.0_x86_64-apple-darwin.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.2.0_x86_64-apple-darwin.tar.bz2"
+            },
+            {
+              "size": "11760787",
+              "checksum": "SHA-256:bed9f081f8f61adc93ca678ceef21cfb2923d76063705d70869339e5cb3115fd",
+              "host": "x86_64-linux-gnu",
+              "archiveFileName": "dw-tools-2.2.0_x86_64-linux-gnu.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.2.0_x86_64-linux-gnu.tar.bz2"
+            },
+            {
+              "size": "10197018",
+              "checksum": "SHA-256:45f1b2f5720be6a89d48521ed190d726ea064fb6d9426cc198de943ee7c8f13b",
+              "host": "x86_64-mingw32",
+              "archiveFileName": "dw-tools-2.2.0_x86_64-mingw32.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.2.0_x86_64-mingw32.tar.bz2"
+            },
+            {
+              "size": "16719797",
+              "checksum": "SHA-256:69402085d5ab886cb3eb3084ad04a141fb0038aa1c59ebba722af644f1632f02",
+              "host": "arm64-apple-darwin",
+              "archiveFileName": "dw-tools-2.2.0_arm64-apple-darwin.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.2.0_arm64-apple-darwin.tar.bz2"
+            }
+          ]
+        },
+        {
+          "name": "dw-tools",
+          "version": "2.2.1",
+          "systems": [
+            {
+              "size": "1795",
+              "checksum": "SHA-256:b49051d81224d4b42a9ff99fa711b35b97b608723c2817ab3b145b6ef9c98e71",
+              "host": "arm-linux-gnueabihf",
+              "archiveFileName": "dw-tools-2.2.1_arm-linux-gnueabihf.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.2.1_arm-linux-gnueabihf.tar.bz2"
+            },
+            {
+              "size": "13413080",
+              "checksum": "SHA-256:6ed702c748a16bf9991b6a8e3a4cf6183243014fa1135a685a10149cbb52e73a",
+              "host": "aarch64-linux-gnu",
+              "archiveFileName": "dw-tools-2.2.1_aarch64-linux-gnu.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.2.1_aarch64-linux-gnu.tar.bz2"
+            },
+            {
+              "size": "17215895",
+              "checksum": "SHA-256:f6c41ffae34e571341d407535ca3e50c128109494563ae9eb1e6f5f5ee419bcd",
+              "host": "x86_64-apple-darwin",
+              "archiveFileName": "dw-tools-2.2.1_x86_64-apple-darwin.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.2.1_x86_64-apple-darwin.tar.bz2"
+            },
+            {
+              "size": "11764230",
+              "checksum": "SHA-256:e2be14329a3b868b12acc7012c367033282cf72848dcb12887e195ec0b709f92",
+              "host": "x86_64-linux-gnu",
+              "archiveFileName": "dw-tools-2.2.1_x86_64-linux-gnu.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.2.1_x86_64-linux-gnu.tar.bz2"
+            },
+            {
+              "size": "1787",
+              "checksum": "SHA-256:e7cb705970aec9f2e5358267376b8960f497d24dad684d3c04cc1f2aaa595680",
+              "host": "i686-linux-gnu",
+              "archiveFileName": "dw-tools-2.2.1_i686-linux-gnu.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.2.1_i686-linux-gnu.tar.bz2"
+            },
+            {
+              "size": "10206593",
+              "checksum": "SHA-256:a0f40cfe3f4441dec3f7d85703991d1bbfba2b8b0779ad4d949703650873c3f4",
+              "host": "x86_64-mingw32",
+              "archiveFileName": "dw-tools-2.2.1_x86_64-mingw32.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.2.1_x86_64-mingw32.tar.bz2"
+            },
+            {
+              "size": "16719937",
+              "checksum": "SHA-256:07cea48fa44df01ca8a872001e5e3ab0ee6258bfe280d251cc5b76628125cf73",
+              "host": "arm64-apple-darwin",
+              "archiveFileName": "dw-tools-2.2.1_arm64-apple-darwin.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.2.1_arm64-apple-darwin.tar.bz2"
+            },
+            {
+              "size": "51137",
+              "checksum": "SHA-256:8b824062572da194b0905a5ea18dfdbd8b1d6d53b2a7ada7f8a6de9f1e89a895",
+              "host": "i686-mingw32",
+              "archiveFileName": "dw-tools-2.2.1_i686-mingw32.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.2.1_i686-mingw32.tar.bz2"
+            }
+          ]
+        },
+        {
+          "name": "avrdude",
+          "version": "8.0-arduino.1",
+          "systems": [
+            {
+              "size": "1441658",
+              "checksum": "SHA-256:66ae53dac08b2db2f065d7b6b2f60ff62d2a85907613c7b2988fdd1922950b5d",
+              "host": "arm-linux-gnueabihf",
+              "archiveFileName": "avrdude_8.0-arduino.1_Linux_ARMv6.tar.gz",
+              "url": "http://downloads.arduino.cc/tools/avrdude_8.0-arduino.1_Linux_ARMv6.tar.gz"
+            },
+            {
+              "size": "1565761",
+              "checksum": "SHA-256:031f212bdcb77e2ea13895f07ab4a0c254963f8f1bbd3b8797d3363a6a2e95e3",
+              "host": "aarch64-linux-gnu",
+              "archiveFileName": "avrdude_8.0-arduino.1_Linux_ARM64.tar.gz",
+              "url": "http://downloads.arduino.cc/tools/avrdude_8.0-arduino.1_Linux_ARM64.tar.gz"
+            },
+            {
+              "size": "1173108",
+              "checksum": "SHA-256:8a36cf441a3ce21622eb30b40f0b71d27864b30ea851cb795ae654ee10e2c132",
+              "host": "x86_64-apple-darwin12",
+              "archiveFileName": "avrdude_8.0-arduino.1_macOS_64bit.tar.gz",
+              "url": "http://downloads.arduino.cc/tools/avrdude_8.0-arduino.1_macOS_64bit.tar.gz"
+            },
+            {
+              "size": "1476932",
+              "checksum": "SHA-256:1d2edadb07e070fcd016e8c802e961e30bfa606c2db63625c930526e7044aaa6",
+              "host": "x86_64-linux-gnu",
+              "archiveFileName": "avrdude_8.0-arduino.1_Linux_64bit.tar.gz",
+              "url": "http://downloads.arduino.cc/tools/avrdude_8.0-arduino.1_Linux_64bit.tar.gz"
+            },
+            {
+              "size": "1452068",
+              "checksum": "SHA-256:622358355a17cb400060cffbe1f8fc2fd9cea2ee883ab1b7766fd8219e0fc0f9",
+              "host": "i686-linux-gnu",
+              "archiveFileName": "avrdude_8.0-arduino.1_Linux_32bit.tar.gz",
+              "url": "http://downloads.arduino.cc/tools/avrdude_8.0-arduino.1_Linux_32bit.tar.gz"
+            },
+            {
+              "size": "1890359",
+              "checksum": "SHA-256:833aa1a66a8e70cd597fcfdbd7e559a91a00eca1d7aa3be2ce9bcadf7ccb987c",
+              "host": "i686-mingw32",
+              "archiveFileName": "avrdude_8.0-arduino.1_Windows_32bit.tar.gz",
+              "url": "http://downloads.arduino.cc/tools/avrdude_8.0-arduino.1_Windows_32bit.tar.gz"
+            }
+          ]
+        },
+        {
+          "name": "dw-tools",
+          "version": "2.3.2",
+          "systems": [
+            {
+              "size": "1799",
+              "checksum": "SHA-256:fe90fd0ab67aa1a122b6cec1aff9249c3d66ce0db7ccb42efcb5e071c4192ddf",
+              "host": "arm-linux-gnueabihf",
+              "archiveFileName": "dw-tools-2.3.2_arm-linux-gnueabihf.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.3.2_arm-linux-gnueabihf.tar.bz2"
+            },
+            {
+              "size": "13021165",
+              "checksum": "SHA-256:fe3d94c4ee8be4d3a9b06af0522f078d9fd9f380769af268d71177809dae6392",
+              "host": "aarch64-linux-gnu",
+              "archiveFileName": "dw-tools-2.3.2_aarch64-linux-gnu.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.3.2_aarch64-linux-gnu.tar.bz2"
+            },
+            {
+              "size": "17805088",
+              "checksum": "SHA-256:5536ed2294f423e90488b351537ab2b45345baac071de4d57ca3159a54ff79df",
+              "host": "x86_64-apple-darwin",
+              "archiveFileName": "dw-tools-2.3.2_x86_64-apple-darwin.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.3.2_x86_64-apple-darwin.tar.bz2"
+            },
+            {
+              "size": "13607745",
+              "checksum": "SHA-256:468f200c085ccbd1d793d5d12d589f4583ddf8d4656b8460ffd2d269ce1abe05",
+              "host": "x86_64-linux-gnu",
+              "archiveFileName": "dw-tools-2.3.2_x86_64-linux-gnu.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.3.2_x86_64-linux-gnu.tar.bz2"
+            },
+            {
+              "size": "1794",
+              "checksum": "SHA-256:041a08b5210c22c6dfd11d2a31dd14c0fa0681a417fe3b9a7e28bbf8bf1f64c1",
+              "host": "i686-linux-gnu",
+              "archiveFileName": "dw-tools-2.3.2_i686-linux-gnu.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.3.2_i686-linux-gnu.tar.bz2"
+            },
+            {
+              "size": "11996350",
+              "checksum": "SHA-256:47424e4c4dba95e9b2e869b98bbb767acb759ea39ea70479856a4a9505a7b76c",
+              "host": "x86_64-mingw32",
+              "archiveFileName": "dw-tools-2.3.2_x86_64-mingw32.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.3.2_x86_64-mingw32.tar.bz2"
+            },
+            {
+              "size": "17448369",
+              "checksum": "SHA-256:9d80c6a7de733b10e8920c33110c63c05bd108085d86b7049cd381e39ec131f6",
+              "host": "arm64-apple-darwin",
+              "archiveFileName": "dw-tools-2.3.2_arm64-apple-darwin.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.3.2_arm64-apple-darwin.tar.bz2"
+            },
+            {
+              "size": "51123",
+              "checksum": "SHA-256:a35623b147dcacab13c8a645387715e6f8ee42cbbb5c2972f5ac3ec8569ab9d1",
+              "host": "i686-mingw32",
+              "archiveFileName": "dw-tools-2.3.2_i686-mingw32.tar.bz2",
+              "url": "https://felias-fogg.github.io/dw-tools/dw-tools-2.3.2_i686-mingw32.tar.bz2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ArduinoCore-avr-debug-enabled",
+      "maintainer": "felias-fogg",
+      "websiteURL": "https://github.com/felias-fogg/ArduinoCore-avr-debug-enabled",
+      "email": "nebel@hinterm-ziel",
+      "help": {
+        "online": "https://github.com/felias-fogg/ArduinoCore-avr-debug-enabled"
+      },
+      "platforms": [
+        {
+          "name": "Arduino AVR Boards",
+          "architecture": "avr",
+          "version": "1.8.6",
+          "category": "Arduino",
+          "url": "https://downloads.arduino.cc/cores/staging/avr-1.8.6.tar.bz2",
+          "archiveFileName": "avr-1.8.6.tar.bz2",
+          "checksum": "SHA-256:ff1d17274b5a952f172074bd36c3924336baefded0232e10982f8999c2f7c3b6",
+          "size": "7127080",
+          "help": {
+            "online": "https://www.arduino.cc/en/Reference/HomePage"
+          },
+          "boards": [
+            {
+              "name": "Arduino Yún"
+            },
+            {
+              "name": "Arduino UNO"
+            },
+            {
+              "name": "Arduino UNO Mini"
+            },
+            {
+              "name": "Arduino UNO WiFi"
+            },
+            {
+              "name": "Arduino Diecimila"
+            },
+            {
+              "name": "Arduino Nano"
+            },
+            {
+              "name": "Arduino Mega"
+            },
+            {
+              "name": "Arduino Mega ADK"
+            },
+            {
+              "name": "Arduino Leonardo"
+            },
+            {
+              "name": "Arduino Leonardo Ethernet"
+            },
+            {
+              "name": "Arduino Micro"
+            },
+            {
+              "name": "Arduino Esplora"
+            },
+            {
+              "name": "Arduino Mini"
+            },
+            {
+              "name": "Arduino Ethernet"
+            },
+            {
+              "name": "Arduino Fio"
+            },
+            {
+              "name": "Arduino BT"
+            },
+            {
+              "name": "Arduino LilyPad USB"
+            },
+            {
+              "name": "Arduino LilyPad"
+            },
+            {
+              "name": "Arduino Pro"
+            },
+            {
+              "name": "Arduino ATMegaNG"
+            },
+            {
+              "name": "Arduino Robot Control"
+            },
+            {
+              "name": "Arduino Robot Motor"
+            },
+            {
+              "name": "Arduino Gemma"
+            },
+            {
+              "name": "Adafruit Circuit Playground"
+            },
+            {
+              "name": "Arduino Yún Mini"
+            },
+            {
+              "name": "Arduino Industrial 101"
+            },
+            {
+              "name": "Linino One"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            }
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "name": "arduinoOTA",
+          "version": "1.3.0",
+          "systems": [
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://downloads.arduino.cc/tools/arduinoOTA-1.3.0-linux_arm64.tar.bz2",
+              "archiveFileName": "arduinoOTA-1.3.0-linux_arm64.tar.bz2",
+              "checksum": "SHA-256:835ed8f37cffac37e979d1b0f6041559592d3d98be52f0e8611b76c4858e4113",
+              "size": "2472427"
+            },
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "https://downloads.arduino.cc/tools/arduinoOTA-1.3.0-linux_arm.tar.bz2",
+              "archiveFileName": "arduinoOTA-1.3.0-linux_arm.tar.bz2",
+              "checksum": "SHA-256:1888587409b56aef4ba0ab0e6703b3dccba7cc3a022756ba9b908247e5d5a656",
+              "size": "2567435"
+            },
+            {
+              "host": "i386-apple-darwin11",
+              "url": "https://downloads.arduino.cc/tools/arduinoOTA-1.3.0-darwin_amd64.tar.bz2",
+              "archiveFileName": "arduinoOTA-1.3.0-darwin_amd64.tar.bz2",
+              "checksum": "SHA-256:d5d0f82ff829c0e434d12a2ee640a6fbd78f893ab37782edbb8b5bf2359d119e",
+              "size": "2766116"
+            },
+            {
+              "host": "i686-linux-gnu",
+              "url": "https://downloads.arduino.cc/tools/arduinoOTA-1.3.0-linux_386.tar.bz2",
+              "archiveFileName": "arduinoOTA-1.3.0-linux_386.tar.bz2",
+              "checksum": "SHA-256:3e7f59d6fbc7a724598303f0d3289d0c4fd137a8973437980658379a024887b2",
+              "size": "2633516"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://downloads.arduino.cc/tools/arduinoOTA-1.3.0-windows_386.zip",
+              "archiveFileName": "arduinoOTA-1.3.0-windows_386.zip",
+              "checksum": "SHA-256:051943844eee442460d2c709edefadca184287fffd2b6c100dd53aa742aa05f6",
+              "size": "2768948"
+            },
+            {
+              "host": "x86_64-linux-gnu",
+              "url": "https://downloads.arduino.cc/tools/arduinoOTA-1.3.0-linux_amd64.tar.bz2",
+              "archiveFileName": "arduinoOTA-1.3.0-linux_amd64.tar.bz2",
+              "checksum": "SHA-256:aa45ee2441ffc3a122daec5802941d1fa2ac47adf5c5c481b5e0daa4dc259ffa",
+              "size": "2716248"
+            }
+          ]
+        },
+        {
+          "name": "avr-gcc",
+          "version": "7.3.0-atmel3.6.1-arduino7",
+          "systems": [
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://downloads.arduino.cc/tools/avr-gcc-7.3.0-atmel3.6.1-arduino7-aarch64-pc-linux-gnu.tar.bz2",
+              "archiveFileName": "avr-gcc-7.3.0-atmel3.6.1-arduino7-aarch64-pc-linux-gnu.tar.bz2",
+              "checksum": "SHA-256:03d322b9df6da17289e9e7c6233c34a8535d9c645c19efc772ba19e56914f339",
+              "size": "38045723"
+            },
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "https://downloads.arduino.cc/tools/avr-gcc-7.3.0-atmel3.6.1-arduino7-arm-linux-gnueabihf.tar.bz2",
+              "archiveFileName": "avr-gcc-7.3.0-atmel3.6.1-arduino7-arm-linux-gnueabihf.tar.bz2",
+              "checksum": "SHA-256:3903553d035da59e33cff9941b857c3cb379cb0638105dfdf69c97f0acc8e7b5",
+              "size": "34683056"
+            },
+            {
+              "host": "i686-linux-gnu",
+              "url": "https://downloads.arduino.cc/tools/avr-gcc-7.3.0-atmel3.6.1-arduino7-i686-pc-linux-gnu.tar.bz2",
+              "archiveFileName": "avr-gcc-7.3.0-atmel3.6.1-arduino7-i686-pc-linux-gnu.tar.bz2",
+              "checksum": "SHA-256:954bbffb33545bcdcd473af993da2980bf32e8461ff55a18e0eebc7b2ef69a4c",
+              "size": "37176991"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://downloads.arduino.cc/tools/avr-gcc-7.3.0-atmel3.6.1-arduino7-i686-w64-mingw32.zip",
+              "archiveFileName": "avr-gcc-7.3.0-atmel3.6.1-arduino7-i686-w64-mingw32.zip",
+              "checksum": "SHA-256:a54f64755fff4cb792a1495e5defdd789902a2a3503982e81b898299cf39800e",
+              "size": "52519412"
+            },
+            {
+              "host": "x86_64-apple-darwin14",
+              "url": "https://downloads.arduino.cc/tools/avr-gcc-7.3.0-atmel3.6.1-arduino7-x86_64-apple-darwin14.tar.bz2",
+              "archiveFileName": "avr-gcc-7.3.0-atmel3.6.1-arduino7-x86_64-apple-darwin14.tar.bz2",
+              "checksum": "SHA-256:f6ed2346953fcf88df223469088633eb86de997fa27ece117fd1ef170d69c1f8",
+              "size": "36684546"
+            },
+            {
+              "host": "x86_64-linux-gnu",
+              "url": "https://downloads.arduino.cc/tools/avr-gcc-7.3.0-atmel3.6.1-arduino7-x86_64-pc-linux-gnu.tar.bz2",
+              "archiveFileName": "avr-gcc-7.3.0-atmel3.6.1-arduino7-x86_64-pc-linux-gnu.tar.bz2",
+              "checksum": "SHA-256:bd8c37f6952a2130ac9ee32c53f6a660feb79bee8353c8e289eb60fdcefed91e",
+              "size": "37630618"
+            }
+          ]
+        },
+        {
+          "name": "avrdude",
+          "version": "6.3.0-arduino17",
+          "systems": [
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://downloads.arduino.cc/tools/avrdude-6.3.0-arduino17-aarch64-pc-linux-gnu.tar.bz2",
+              "archiveFileName": "avrdude-6.3.0-arduino17-aarch64-pc-linux-gnu.tar.bz2",
+              "checksum": "SHA-256:6cf948f751acfe7b96684537f2291c766ec8b54b4f7dc95539864821456fa9fc",
+              "size": "229852"
+            },
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "https://downloads.arduino.cc/tools/avrdude-6.3.0-arduino17-armhf-pc-linux-gnu.tar.bz2",
+              "archiveFileName": "avrdude-6.3.0-arduino17-armhf-pc-linux-gnu.tar.bz2",
+              "checksum": "SHA-256:2a8e68c5d803aa6f902ef219f177ec3a4c28275d85cbe272962ad2cd374f50d1",
+              "size": "219631"
+            },
+            {
+              "host": "i686-linux-gnu",
+              "url": "https://downloads.arduino.cc/tools/avrdude-6.3.0-arduino17-i686-pc-linux-gnu.tar.bz2",
+              "archiveFileName": "avrdude-6.3.0-arduino17-i686-pc-linux-gnu.tar.bz2",
+              "checksum": "SHA-256:5c8cc6c17db9300e1451fe41cd7178b0442b4490ee6fdbc0aed9811aef96c05f",
+              "size": "244550"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://downloads.arduino.cc/tools/avrdude-6.3.0-arduino17-i686-w64-mingw32.zip",
+              "archiveFileName": "avrdude-6.3.0-arduino17-i686-w64-mingw32.zip",
+              "checksum": "SHA-256:e99188873c7c5ad8f8f906f068c33600e758b2e36cce3adbd518a21bd266749d",
+              "size": "328460"
+            },
+            {
+              "host": "x86_64-apple-darwin12",
+              "url": "https://downloads.arduino.cc/tools/avrdude-6.3.0-arduino17-x86_64-apple-darwin12.tar.bz2",
+              "archiveFileName": "avrdude-6.3.0-arduino17-x86_64-apple-darwin12.tar.bz2",
+              "checksum": "SHA-256:120cc9edaae699e7e9ac50b1b8eb0e7d51fdfa555bac54233c2511e6ee5418c9",
+              "size": "279045"
+            },
+            {
+              "host": "x86_64-linux-gnu",
+              "url": "https://downloads.arduino.cc/tools/avrdude-6.3.0-arduino17-x86_64-pc-linux-gnu.tar.bz2",
+              "archiveFileName": "avrdude-6.3.0-arduino17-x86_64-pc-linux-gnu.tar.bz2",
+              "checksum": "SHA-256:accdfb920af2aabf4f7461d2ac73c0751760f525216dc4e7657427a78c60d13d",
+              "size": "254271"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
