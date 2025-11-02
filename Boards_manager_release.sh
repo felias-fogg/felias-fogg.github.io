@@ -64,6 +64,10 @@ if [ "true" == "$PRESENT" ]; then
     exit 1
 fi
 
+# extract name from platform.txt
+NAMELINE=$(grep "name=" $REPO-$VNUM/platform.txt)
+NICENAME=${NAMELINE#name=}
+
 dot_clean .
 
 # Compress folder to tar.bz2
@@ -88,6 +92,7 @@ cp "package_debugging_index.json" "package_debugging_index.json.tmp"
 jq -r \
 --slurpfile boards        extras/${REPO}_boards.json    \
 --slurpfile deps          extras/${REPO}_deps.json      \
+--arg nice_name           $NICENAME                     \
 --arg avrocd_toolsversion $PAONUM                       \
 --arg repository          $REPO                         \
 --arg version             $VNUM                         \
@@ -97,7 +102,7 @@ jq -r \
 --arg file_name           $REPO-$VNUM.tar.bz2           \
 '.packages[.packages | to_entries | .[] | select(.value.name==$repository) | .key].platforms[.packages[.packages | to_entries | .[] | select(.value.name==$repository) | .key].platforms | length] |= . +
 {
-  "name": $repository,
+  "name": $nice_name,
   "architecture": "avr",
   "version": $version,
   "category": "Contributed",

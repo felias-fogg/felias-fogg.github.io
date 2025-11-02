@@ -10,7 +10,7 @@
       },
       "platforms": [
         {
-          "name": "ATTinyCore-debug-enabled",
+          "name": "ATTinyCore (Debug enabled)",
           "architecture": "avr",
           "version": "0.9.0",
           "category": "Contributed",
@@ -247,7 +247,7 @@
     },
     {
       "name": "ArduinoCore-avr-debug-enabled",
-      "maintainer": "felias-fogg",
+      "maintainer": "Bernhard Nebel",
       "websiteURL": "https://github.com/felias-fogg/ArduinoCore-avr-debug-enabled",
       "email": "nebel@hinterm-ziel",
       "help": {
@@ -255,7 +255,7 @@
       },
       "platforms": [
         {
-          "name": "ArduinoCore-avr-debug-enabled",
+          "name": "Arduino AVR Boards (Debug enabled)",
           "architecture": "avr",
           "version": "0.9.0",
           "category": "Contributed",
