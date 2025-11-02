@@ -11,11 +11,15 @@
 ##                                                      ##
 ##########################################################
 # Change these to match your repo
-REPO=$1                  # Github repo
+REPO=$1                 # Github repo
 OWNER=felias-fogg       # Github username
-VERSION=$(curl -s https://api.github.com/repos/$OWNER/$REPO/releases/latest | grep "tag_name" |  awk -F\" '{print $4})
+VERSION=$(curl -s https://api.github.com/repos/$OWNER/$REPO/releases/latest | grep "tag_name" |  awk -F\" '{print $4}')
+if [ -z "$VERSION" ]; then
+    echo "Could not find repo '$REPO'"
+    exit 1
+fi
 VNUM=${VERSION#"v"}
-PAOVERSION=$(curl -s https://api.github.com/repos/$OWNER/PyAvrOCD/releases/latest | grep "tag_name" |  awk -F\" '{print $4})
+PAOVERSION=$(curl -s https://api.github.com/repos/$OWNER/PyAvrOCD/releases/latest | grep "tag_name" |  awk -F\" '{print $4}')
 PAONUM=${PAOVERSION#"v"}
 
 # Get the download URL for the latest release from Github
@@ -45,7 +49,7 @@ fi
 rm -rf ${DOWNLOADED_FILE}.tar.bz2
 
 # Check whether version numbers match
-PLATFORM=$(grep "version=" $REPO-$VNUM/platform.txt)
+PLATFORM=$(grep -E "version=\d+\.\d+\.\d+" $REPO-$VNUM/platform.txt)
 PNUM=${PLATFORM#version=}
 
 if [ "x$PNUM" != "x$VNUM" ]; then
@@ -53,15 +57,17 @@ if [ "x$PNUM" != "x$VNUM" ]; then
     exit 1
 fi
 
-if [ "true" == ${jq --arg file $REPO-$VNUM.tar.bz2 '[.packages[].platforms[].archiveFileName | . == $file] | any' "package_debugging_index.json"} ]; then
+PRESENT=`jq --arg file $REPO-$VNUM.tar.bz2 '[.packages[].platforms[].archiveFileName | . == $file] | any' "package_debugging_index.json"`
+if [ "true" == "$PRESENT" ]; then
     echo "Version is already present in index!"
+    rm -rf $REPO-$VNUM
     exit 1
 fi
 
 dot_clean .
 
 # Compress folder to tar.bz2
-printf "\nCompressing folder $REPO-$VNUM} to $REPO-$VNUM.tar.bz2\n"
+printf "\nCompressing folder $REPO-$VNUM to $REPO-$VNUM.tar.bz2\n"
 tar -cjSf $REPO-$VNUM.tar.bz2 $REPO-$VNUM
 printf "Done!\n"
 
@@ -80,8 +86,8 @@ cp "package_debugging_index.json" "package_debugging_index.json.tmp"
 
 # Add new boards release entry
 jq -r \
---rawfile boards          extras/${REPO}_boards.json    \
---rawfile deps            extras/${REPO}_deps.json      \
+--slurpfile boards        extras/${REPO}_boards.json    \
+--slurpfile deps          extras/${REPO}_deps.json      \
 --arg avrocd_toolsversion $PAONUM                       \
 --arg repository          $REPO                         \
 --arg version             $VNUM                         \
@@ -89,8 +95,7 @@ jq -r \
 --arg checksum            $SHA256                       \
 --arg file_size           $FILE_SIZE                    \
 --arg file_name           $REPO-$VNUM.tar.bz2           \
-'.packages[.packages | to_entries | .[] | select(.value.name==$repository) | .key]\
-.platforms[.packages[.packages | to_entries | .[] | select(.value.name==$repository) | .key].platforms | length] |= . +
+'.packages[.packages | to_entries | .[] | select(.value.name==$repository) | .key].platforms[.packages[.packages | to_entries | .[] | select(.value.name==$repository) | .key].platforms | length] |= . +
 {
   "name": $repository,
   "architecture": "avr",
@@ -100,15 +105,15 @@ jq -r \
   "archiveFileName": $file_name,
   "checksum": $checksum,
   "size": $file_size,
-  "boards":  [ $boards ],
-  "toolsDependencies": [
-   $deps
-   {
-      "packager": $repository,
-      "name": "avrocd-tools",
-      "version": $avrocd_toolsversion
-    }
-  ]
+  "boards": $boards,
+  "toolsDependencies": $deps + 
+   [
+            {
+                "packager": $repository,
+                "name": "avrocd-tools",
+                "version": $avrocd_toolsversion
+            }
+   ]
 }' "package_debugging_index.json.tmp" > "package_debugging_index.json"
 
 # Remove files that are no longer needed

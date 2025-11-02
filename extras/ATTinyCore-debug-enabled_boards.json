@@ -1,9 +1,35 @@
             {
-              "name": "<b>Program via ISP or Serial:</b> ATtiny841/441, ATtiny85/45/25, ATtiny84/44/24, ATtiny1634, ATtiny861/461/261, ATtiny167/87, ATtiny43, ATtiny828, ATtiny88/48, ATtiny4313/2313"
-            },
-            {
-              "name": "<br/><b>USB (Micronucleus) Support:</b> DigiSpark (t85), Digispark Pro (t167), MH-ET (t88), Wattuino/Nanite/etc (t841), CaliforniaSTEAM (t84)"
-            },
-            {
-              "name": "<br/><b>Windows users:</b> If USB drivers are not already installed, run the post_install.bat manually or DL from <a href=https://azduino.com/bin/micronucleus>https://azduino.com/bin/micronucleus</a>"
+              "name": "ATtiny43U"
             }
+            {
+              "name": "ATtiny2313/4313"
+            }
+            {
+                "name": "ATtiny24/44/84"
+            }
+            {
+                "name": "ATtiny441/841 (Wattuino Nanite)"
+            }
+            {
+                "name": "ATtiny25/45/85 (Digispark)"
+            }
+            {
+                "name": "ATtiny26"
+            }
+            {
+                "name": "ATtiny261/461/861"
+            }
+            {
+                "name": "ATtiny87/167 (Digispark Pro)"
+            }
+            {
+                "name": "ATtiny48/88 (MHET-TINY)"
+            }
+            {
+                "name": "ATtiny828"
+            }
+            {
+                "name": "ATtiny1634"
+            }
+
+
