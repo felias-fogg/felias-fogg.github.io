@@ -89,10 +89,18 @@ URL="https://${OWNER}.github.io/$REPO-$VNUM.tar.bz2"
 cp "package_debugging_index.json" "package_debugging_index.json.tmp"
 
 # Add new boards release entry
+echo $REPO
+echo $NICENAME
+echo $PAONUM
+echo $VNUM
+echo $URL
+echo $SHA256
+echo $FILE_SIZE
+
 jq -r \
 --slurpfile boards        extras/${REPO}_boards.json    \
 --slurpfile deps          extras/${REPO}_deps.json      \
---arg nice_name           $NICENAME                     \
+--arg nice_name           "$NICENAME"                     \
 --arg avrocd_toolsversion $PAONUM                       \
 --arg repository          $REPO                         \
 --arg version             $VNUM                         \
