@@ -4,7 +4,7 @@
               "version": "7.3.0-atmel3.6.1-arduino7"
             }
             {
-              "packager": "arduino",
+              "packager": "avr-xminis-debug-enabled",
               "name": "avrdude",
               "version": "8.0-arduino.1"
             }
