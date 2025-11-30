@@ -209,6 +209,73 @@
               "version": "0.17.1"
             }
           ]
+        },
+        {
+          "name": "ATTinyCore (Debug enabled)",
+          "architecture": "avr",
+          "version": "0.9.3",
+          "category": "Contributed",
+          "url": "https://felias-fogg.github.io/ATTinyCore-debug-enabled-0.9.3.tar.bz2",
+          "archiveFileName": "ATTinyCore-debug-enabled-0.9.3.tar.bz2",
+          "checksum": "SHA-256:44d6176b479a2d0c77ff6861ef94522d2128a0b11089607bbb6c914a49c5e2f9",
+          "size": "23839831",
+          "boards": [
+            {
+              "name": "ATtiny43U"
+            },
+            {
+              "name": "ATtiny2313/4313"
+            },
+            {
+              "name": "ATtiny24/44/84"
+            },
+            {
+              "name": "ATtiny441/841 (Wattuino Nanite)"
+            },
+            {
+              "name": "ATtiny25/45/85 (Digispark)"
+            },
+            {
+              "name": "ATtiny26"
+            },
+            {
+              "name": "ATtiny261/461/861"
+            },
+            {
+              "name": "ATtiny87/167 (Digispark Pro)"
+            },
+            {
+              "name": "ATtiny48/88 (MHET-TINY)"
+            },
+            {
+              "name": "ATtiny828"
+            },
+            {
+              "name": "ATtiny1634"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "ATTinyCore-debug-enabled",
+              "name": "avrdude",
+              "version": "8.0-arduino.1"
+            },
+            {
+              "packager": "ATTinyCore-debug-enabled",
+              "name": "micronucleus",
+              "version": "2.5-azd1b"
+            },
+            {
+              "packager": "ATTinyCore-debug-enabled",
+              "name": "avrocd-tools",
+              "version": "0.17.1"
+            }
+          ]
         }
       ],
       "tools": [

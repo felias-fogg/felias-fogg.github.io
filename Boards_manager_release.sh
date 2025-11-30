@@ -65,7 +65,7 @@ if [ "true" == "$PRESENT" ]; then
 fi
 
 # extract name from platform.txt
-NAMELINE=$(grep "name=" $REPO-$VNUM/platform.txt)
+NAMELINE=$(grep "^name=" $REPO-$VNUM/platform.txt)
 NICENAME=${NAMELINE#name=}
 
 dot_clean .
