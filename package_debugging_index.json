@@ -1685,6 +1685,44 @@
               "version": "0.17.1"
             }
           ]
+        },
+        {
+          "name": "Atmel AVR Xplained-minis (Debug enabled)",
+          "architecture": "avr",
+          "version": "0.9.7",
+          "category": "Contributed",
+          "url": "https://felias-fogg.github.io/avr-xminis-debug-enabled-0.9.7.tar.bz2",
+          "archiveFileName": "avr-xminis-debug-enabled-0.9.7.tar.bz2",
+          "checksum": "SHA-256:8c9bfcd570af029de25732319286d532e788b867c71cd1a2c21b872d9447c427",
+          "size": "147256",
+          "boards": [
+            {
+              "name": "Atmel atmega328p Xplained mini"
+            },
+            {
+              "name": "Atmel atmega328pb Xplained mini"
+            },
+            {
+              "name": "Atmel atmega168pb Xplained mini"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "avr-xminis-debug-enabled",
+              "name": "avrdude",
+              "version": "8.0-arduino.1"
+            },
+            {
+              "packager": "avr-xminis-debug-enabled",
+              "name": "avrocd-tools",
+              "version": "0.18.0"
+            }
+          ]
         }
       ],
       "tools": [
