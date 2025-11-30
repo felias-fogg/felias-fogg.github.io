@@ -142,6 +142,73 @@
               "version": "0.17.1"
             }
           ]
+        },
+        {
+          "name": "ATTinyCore (Debug enabled)\nbuild.extraassetname={build.project_name}.{build.mcu}{build.bootloaderabr}{build.pinmapabr}.{build.speed}c{build.clocksource}.{build.millisabr}{build.wiremodeabr}{build.softserabr}{build.remapabr}",
+          "architecture": "avr",
+          "version": "0.9.2",
+          "category": "Contributed",
+          "url": "https://felias-fogg.github.io/ATTinyCore-debug-enabled-0.9.2.tar.bz2",
+          "archiveFileName": "ATTinyCore-debug-enabled-0.9.2.tar.bz2",
+          "checksum": "SHA-256:0072677a39f6c330f6bc7f34e4dd6dc57ebc701a00dd2834d8cda667c27f7e96",
+          "size": "23839408",
+          "boards": [
+            {
+              "name": "ATtiny43U"
+            },
+            {
+              "name": "ATtiny2313/4313"
+            },
+            {
+              "name": "ATtiny24/44/84"
+            },
+            {
+              "name": "ATtiny441/841 (Wattuino Nanite)"
+            },
+            {
+              "name": "ATtiny25/45/85 (Digispark)"
+            },
+            {
+              "name": "ATtiny26"
+            },
+            {
+              "name": "ATtiny261/461/861"
+            },
+            {
+              "name": "ATtiny87/167 (Digispark Pro)"
+            },
+            {
+              "name": "ATtiny48/88 (MHET-TINY)"
+            },
+            {
+              "name": "ATtiny828"
+            },
+            {
+              "name": "ATtiny1634"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "ATTinyCore-debug-enabled",
+              "name": "avrdude",
+              "version": "8.0-arduino.1"
+            },
+            {
+              "packager": "ATTinyCore-debug-enabled",
+              "name": "micronucleus",
+              "version": "2.5-azd1b"
+            },
+            {
+              "packager": "ATTinyCore-debug-enabled",
+              "name": "avrocd-tools",
+              "version": "0.17.1"
+            }
+          ]
         }
       ],
       "tools": [
