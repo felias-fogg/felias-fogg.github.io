@@ -86,7 +86,7 @@ URL="https://${OWNER}.github.io/$REPO-$VNUM.tar.bz2"
 
 # Create board entries
 
-cp "package_debugging_index.json" "package_debugging_index.json.tmp"
+cp "package_debug_enabled_index.json" "package_debug_enabled_index.json.tmp"
 
 # Add new boards release entry
 echo $REPO
@@ -127,8 +127,8 @@ jq -r \
                 "version": $avrocd_toolsversion
             }
    ]
-}' "package_debugging_index.json.tmp" > "package_debugging_index.json"
+}' "package_debug_enabled_index.json.tmp" > "package_debug_enabled_index.json"
 
 # Remove files that are no longer needed
-rm -rf "$REPO-$VNUM" "package_debugging_index.json.tmp"
+rm -rf "$REPO-$VNUM" "package_debug_enabled_index.json.tmp"
 
