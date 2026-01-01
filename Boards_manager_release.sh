@@ -75,6 +75,10 @@ printf "\nCompressing folder $REPO-$VNUM to $REPO-$VNUM.tar.bz2\n"
 tar -cjSf $REPO-$VNUM.tar.bz2 $REPO-$VNUM
 printf "Done!\n"
 
+# Add to git stage
+echo Add new version $REPO-$VNUM.tar.bz2 to git staging area
+git add $REPO-$VNUM.tar.bz2
+
 # Get file size on bytes
 FILE_SIZE=$(wc -c "$REPO-$VNUM.tar.bz2" | awk '{print $1}')
 
@@ -85,7 +89,7 @@ SHA256="SHA-256:$(shasum -a 256 "$REPO-$VNUM.tar.bz2" | awk '{print $1}')"
 URL="https://${OWNER}.github.io/$REPO-$VNUM.tar.bz2"
 
 # Create board entries
-
+echo Create board entry
 cp "package_debug_enabled_index.json" "package_debug_enabled_index.json.tmp"
 
 # Add new boards release entry
