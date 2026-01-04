@@ -65,12 +65,12 @@
               "packager": "ATTinyCore-debug-enabled",
               "name": "avrocd-tools",
               "version": "0.20.0"
-            }
+            },
             {
               "packager": "ATTinyCore-debug-enabled",
               "name": "micronucleus",
               "version": "2.5-azd1b"
-            },
+            }
           ]
         },
         {
