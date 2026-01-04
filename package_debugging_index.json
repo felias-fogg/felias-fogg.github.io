@@ -65,7 +65,7 @@
               "packager": "ATTinyCore-debug-enabled",
               "name": "avrocd-tools",
               "version": "0.20.0"
-            },
+            }
           ]
         },
         {
