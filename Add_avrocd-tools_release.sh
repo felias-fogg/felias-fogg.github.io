@@ -4,7 +4,7 @@ OWNER=felias-fogg  # Github username
 
 AVROCD_TOOLS_VERSION=$(curl -s https://api.github.com/repos/$OWNER/PyAvrOCD/releases/latest | grep "tag_name" |  awk -F\" '{print $4}' | awk -Fv '{print $2}')
 
-if grep -q "avrocd-tools-${AVROCD_TOOLS_VERSION}" package_debugging_index.json; then
+if grep -q "avrocd-tools-${AVROCD_TOOLS_VERSION}" package_debug_enabled_index.json; then
     echo "Most recent version of PyAvrOCD is already in the index"
     exit 1
 fi
@@ -83,8 +83,8 @@ printf "File6: ${FILE6}, Size: ${SIZE6}, SHA256: ${SHASUM6}, URL6: ${URL6}\n"
 printf "File7: ${FILE7}, Size: ${SIZE7}, SHA256: ${SHASUM7}, URL7: ${URL7}\n"
 printf "File8: ${FILE8}, Size: ${SIZE8}, SHA256: ${SHASUM8}, URL8: ${URL8}\n"
 
-for ((p = 0 ; p < $(jq '.packages | length' package_debugging_index.json); p++)); do
-cp "package_debugging_index.json" "package_debugging_index.json.tmp"
+for ((p = 0 ; p < $(jq '.packages | length' package_debug_enabled_index.json); p++)); do
+cp "package_debug_enabled_index.json" "package_debug_enabled_index.json.tmp"
 jq -r                                  \
 --arg ix                   $p \
 --arg avrocd_tools_version $AVROCD_TOOLS_VERSION \
@@ -198,8 +198,8 @@ jq -r                                  \
       "url": $url8
     }
   ]
-}' "package_debugging_index.json.tmp" > "package_debugging_index.json"
-rm "package_debugging_index.json.tmp"
+}' "package_debug_enabled_index.json.tmp" > "package_debug_enabled_index.json"
+rm "package_debug_enabled_index.json.tmp"
 done
 
 rm $FILE1

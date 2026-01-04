@@ -1,35 +1,30 @@
             {
-              "name": "ATtiny43U"
+              "name": "Program and debug via ISP/dw or Serial:"
             }
             {
-              "name": "ATtiny2313/4313"
+              "name": "ATtiny841/441, ATtiny85/45/25, ATtiny43U"
             }
             {
-                "name": "ATtiny24/44/84"
+              "name": "ATtiny84/44/24, ATtiny1634, ATtiny828"
             }
             {
-                "name": "ATtiny441/841 (Wattuino Nanite)"
+              "name": "ATtiny861/461/261, ATtiny167/87"
             }
             {
-                "name": "ATtiny25/45/85 (Digispark)"
+              "name": "ATtiny88/48, ATtiny4313/2313"
             }
             {
-                "name": "ATtiny26"
+              "name": "USB (Micronucleus) boards:"
             }
             {
-                "name": "ATtiny261/461/861"
+              "name": "DigiSpark (t85), Digispark Pro (t167)"
             }
             {
-                "name": "ATtiny87/167 (Digispark Pro)"
+              "name": "Wattuino Nano (t841), CaliforniaSTEAM (t84)"
             }
             {
-                "name": "ATtiny48/88 (MHET-TINY)"
+              "name": "AzduinoUSB (t84, t841, t861, t1634)"
             }
             {
-                "name": "ATtiny828"
+              "name": "If Win USB drivers not already installed, run the post_install.bat manually or DL from https://azduino.com/bin/micronucleus"
             }
-            {
-                "name": "ATtiny1634"
-            }
-
-

@@ -1,6 +1,9 @@
 #!/bin/bash
 
-#Now publish the new package index
+# Copy new index file to 'legacy' index file 
+cp -f package_debug_enabled_index.json  package_debugging_index.json
+
+# Now publish the new package index
 
 echo "Commiting changes"
 git commit -a -m "New version"

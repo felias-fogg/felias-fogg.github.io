@@ -57,7 +57,7 @@ if [ "x$PNUM" != "x$VNUM" ]; then
     exit 1
 fi
 
-PRESENT=`jq --arg file $REPO-$VNUM.tar.bz2 '[.packages[].platforms[].archiveFileName | . == $file] | any' "package_debugging_index.json"`
+PRESENT=`jq --arg file $REPO-$VNUM.tar.bz2 '[.packages[].platforms[].archiveFileName | . == $file] | any' "package_debug_enabled_index.json"`
 if [ "true" == "$PRESENT" ]; then
     echo "Version is already present in index!"
     rm -rf $REPO-$VNUM
