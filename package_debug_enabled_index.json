@@ -1,12 +1,13 @@
+
 {
   "packages": [
     {
-      "name": "ATTinyCore-debug-enabled",
+      "name": "ATTinyCore",
       "maintainer": "Bernhard Nebel",
-      "websiteURL": "https://github.com/felias-fogg/ATTinyCore-debug-enabled",
+      "websiteURL": "https://github.com/felias-fogg/ATTinyCore",
       "email": "nebel@hinterm-ziel.de",
       "help": {
-        "online": "https://github.com/felias-fogg/ATTinyCore-debug-enabled"
+        "online": "https://github.com/felias-fogg/ATTinyCore"
       },
       "platforms": [
         {
