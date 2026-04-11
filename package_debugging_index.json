@@ -663,6 +663,44 @@
               "version": "0.20.0"
             }
           ]
+        },
+        {
+          "name": "[DEPRECATED - Please install XMiniCore] Atmel AVR Xplained-minis (Debug enabled)",
+          "architecture": "avr",
+          "version": "0.9.9",
+          "category": "Contributed",
+          "url": "https://felias-fogg.github.io/avr-xminis-debug-enabled-0.9.8.tar.bz2",
+          "archiveFileName": "avr-xminis-debug-enabled-0.9.8.tar.bz2",
+          "checksum": "SHA-256:2741caf010e47e3ae36257eb672bac9532002dac775c3e7b07a1ca2889d1e306",
+          "size": "147726",
+          "boards": [
+            {
+              "name": "Atmel atmega328p Xplained mini"
+            },
+            {
+              "name": "Atmel atmega328pb Xplained mini"
+            },
+            {
+              "name": "Atmel atmega168pb Xplained mini"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "avr-xminis-debug-enabled",
+              "name": "avrdude",
+              "version": "8.0-arduino.1"
+            },
+            {
+              "packager": "avr-xminis-debug-enabled",
+              "name": "avrocd-tools",
+              "version": "0.20.0"
+            }
+          ]
         }
       ],
       "tools": [
